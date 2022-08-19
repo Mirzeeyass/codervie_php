@@ -22,7 +22,7 @@
                 session_start();
                 $_SESSION["login"] = true;
                 $_SESSION["username"] = $username;
-                header("location: http://localhost:8080?login=true&name=".$username);
+                header("location: https://coderview.netlify.app?login=true&name=".$username);
             }else{
                 $incorrect = true;
             }
