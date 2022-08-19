@@ -4,7 +4,7 @@
     {
         header("location: home.php");
     }*/
-    //$empty = false;
+    $empty = false;
     //$incorrect = false;
     if($_SERVER["REQUEST_METHOD"] == "POST")
     {
