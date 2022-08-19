@@ -15,14 +15,14 @@
         {
             $empty = true;
         }else{
-            $query = "select * from login where userName='$username'AND password='$password'";
+            $query = "select * from users where username='$username'AND password='$password'";
             $result = mysqli_query($connect, $query);
             $num = mysqli_num_rows($result); 
             if($num==1){
                 session_start();
                 $_SESSION["login"] = true;
                 $_SESSION["username"] = $username;
-                header("location: home.php");
+                header("location: done.php");
             }else{
                 $incorrect = true;
             }
