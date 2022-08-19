@@ -18,7 +18,7 @@
             $query = "select * from users where username='$username'AND password='$password'";
             $result = mysqli_query($connect, $query);
             $num = mysqli_num_rows($result); 
-            if($num=>1){
+            if($num >= 1){
                 session_start();
                 $_SESSION["login"] = true;
                 $_SESSION["username"] = $username;
