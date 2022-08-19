@@ -18,7 +18,7 @@
         }else if($password == $confirm_password){
             $query = "INSERT INTO `users` (`sno`, `username`, `password`) VALUES (NULL, '".$username."', '".$password."')";
             $result = mysqli_query($connect, $query);
-            header ("location: https://coderview.netlify.app/?signup=true");
+            header ("location: https://coderview.netlify.app?signup=true");
         }else{
                 $incorrect = true;
             }
