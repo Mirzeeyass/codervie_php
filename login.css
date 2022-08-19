@@ -1,0 +1,115 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #fefefe;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: #52ab98;
+    width: 50rem;
+    height: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DFE9EB;
+    border-radius: 10px;
+    flex-grow: 2;
+    padding: 20px;
+}
+.login-text{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2a2b2c;
+    letter-spacing: 0.2rem;
+}
+.form-heading{
+    color: #2a2b2c;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+#username, #password{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #656565;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+.submit-btn{
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    width: 105%;
+    padding: 0.75rem 11px 0.75rem 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #61828a;
+    color: #F2F2F2F2;
+    letter-spacing: 0.2rem;
+}
+.submit-btn:hover{
+    background-color: #F2F2F2F2;
+    color: #52ab98;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0.65rem 10px 0.7rem 10px;
+    border-color: #61828a;
+    
+}
+.alert{
+    font-weight: 500;
+    color: rgb(186, 50, 50);
+    margin-top: 3rem;
+    text-align: center;
+}
+@media (max-width: 810px)
+{
+    .main{
+        height:40rem;
+        width: 30rem;
+    }
+    .right-container{
+        justify-content:flex-start;
+    }
+    .login-text{
+        margin-top: 5rem;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 480px){
+    .main{
+        height:40rem;
+        width: 20rem;
+    }
+}
+/*@media (max-width: 810px){
+    .main{
+        height:80%;
+        width: 80%;
+    }
+}
