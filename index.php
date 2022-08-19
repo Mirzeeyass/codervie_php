@@ -22,7 +22,7 @@
                 session_start();
                 $_SESSION["login"] = true;
                 $_SESSION["username"] = $username;
-                header("location: done.php");
+                header("location: http://localhost:8080");
             }else{
                 $incorrect = true;
             }
