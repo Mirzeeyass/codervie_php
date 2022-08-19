@@ -4,14 +4,14 @@
     {
         header("location: home.php");
     }*/
-    //$empty = false;
+    $empty = false;
     $incorrect = false;
     if($_SERVER["REQUEST_METHOD"] == "POST")
     {
         require '_dbConnectUsers.php';
         $username = $_POST["username"];
         $password = $_POST["password"];
-        $confirm_password = $_POST["confirm-password"]
+        $confirm_password = $_POST["confirm-password"];
         if(empty($username) || empty ($password))
         {
             $empty = true;
